@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CustomerInsight",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "description": "The unique identifier of the customer"
+    },
+    "insight_type": {
+      "type": "string",
+      "description": "The type of insight (e.g., demographic, behavioral, transactional)"
+    },
+    "insight_description": {
+      "type": "string",
+      "description": "A brief description of the insight"
+    },
+    "insight_value": {
+      "type": "string",
+      "description": "The value or result of the insight"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp when the insight was generated"
+    }
+  },
+  "required": ["customer_id", "insight_type", "insight_description", "insight_value", "timestamp"]
+}
